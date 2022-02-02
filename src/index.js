@@ -8,7 +8,7 @@ http
   })
   .listen(8080); //the server object listens on port 8080
 const { exec } = require("child_process");
-exec("cp -R script .. && cd .. && sh script", (error, stdout, stderr) => {
+exec("cp -R start .. && cd .. && sh script", (error, stdout, stderr) => {
   if (error) {
     console.log(`error: ${error.message}`);
     return;
